@@ -1,0 +1,2 @@
+web: gunicorn -b 0.0.0.0:$PORT -w 4 home:app
+worker: python main.py -c 3 --beat
